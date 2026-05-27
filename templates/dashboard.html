@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Help Desk Dashboard</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h2>IT Help Desk</h2>
+
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/create-ticket">Create Ticket</a></li>
+                <li><a href="/tickets">View Tickets</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <h1>Welcome Back 🚀</h1>
+            <p class="welcome-text">
+                IT Support Ticket Management Dashboard
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Tickets</h3>
+                    <h2>12</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Resolved</h3>
+                    <h2>8</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Pending</h3>
+                    <h2>3</h2>
+                </div>
+
+                <div class="card">
+                    <h3>High Priority</h3>
+                    <h2>1</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

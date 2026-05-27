@@ -16,19 +16,37 @@
             <h1>IT Help Desk</h1>
             <p class="subtitle">Support Ticket Management System</p>
 
-            <form action="/dashboard">
+            <form action="/login" method="POST">
 
                 <div class="input-group">
                     <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
                 </div>
 
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter password" required>
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter password"
+                        required
+                    >
                 </div>
 
-                <button type="submit">Login</button>
+                {% if error %}
+                <p class="error-message">
+                    {{ error }}
+                </p>
+                {% endif %}
+
+                <button type="submit">
+                    Login
+                </button>
 
             </form>
 
