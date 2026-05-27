@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Help Desk Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <h1>IT Help Desk</h1>
+            <p class="subtitle">Support Ticket Management System</p>
+
+            <form action="/dashboard">
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
