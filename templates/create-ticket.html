@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ticket</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>IT Help Desk</h2>
+
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/create-ticket">Create Ticket</a></li>
+            <li><a href="/tickets">View Tickets</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>Create Ticket 🎫</h1>
+        <p class="welcome-text">
+            Submit a new IT support request
+        </p>
+
+        <div class="ticket-form-container">
+
+            <form class="ticket-form">
+
+                <input
+                    type="text"
+                    placeholder="Employee Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Issue Title"
+                    required
+                >
+
+                <select required>
+                    <option value="">
+                        Select Category
+                    </option>
+                    <option>Password Reset</option>
+                    <option>Email Issue</option>
+                    <option>Printer Problem</option>
+                    <option>Wi-Fi Issue</option>
+                    <option>Software Installation</option>
+                    <option>Hardware Problem</option>
+                </select>
+
+                <select required>
+                    <option value="">
+                        Priority
+                    </option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <textarea
+                    rows="6"
+                    placeholder="Describe the issue..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Submit Ticket
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

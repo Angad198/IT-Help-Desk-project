@@ -38,6 +38,15 @@ def dashboard():
     return render_template("dashboard.html")
 
 
+@app.route("/create-ticket")
+def create_ticket():
+
+    if "user" not in session:
+        return redirect("/")
+
+    return render_template("create_ticket.html")
+
+
 # Logout
 @app.route("/logout")
 def logout():

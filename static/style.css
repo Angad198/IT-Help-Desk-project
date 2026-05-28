@@ -1,10 +1,10 @@
-/* ================= RESET ================= */
+/* ================= GLOBAL RESET ================= */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Segoe UI", sans-serif;
+    font-family:"Segoe UI",sans-serif;
 }
 
 body{
@@ -73,9 +73,16 @@ body{
     color:#94a3b8;
 }
 
+.error-message{
+    color:#ef4444;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/* ================= BUTTONS ================= */
+
 button{
-    width:100%;
-    padding:15px;
+    padding:15px 25px;
     border:none;
     border-radius:14px;
     background:linear-gradient(135deg,#22c55e,#16a34a);
@@ -88,12 +95,13 @@ button{
 
 button:hover{
     transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(34,197,94,0.3);
 }
 
-.error-message{
-    color:#ef4444;
-    margin-bottom:15px;
-    text-align:center;
+/* Login button full width only */
+
+.login-card button{
+    width:100%;
 }
 
 /* ================= DASHBOARD ================= */
@@ -115,8 +123,8 @@ button:hover{
 
 .sidebar h2{
     color:white;
-    margin-bottom:40px;
     font-size:28px;
+    margin-bottom:40px;
 }
 
 .sidebar ul{
@@ -147,17 +155,17 @@ button:hover{
 
 .main-content h1{
     color:white;
-    font-size:48px;
+    font-size:42px;
 }
 
 .welcome-text{
     color:#94a3b8;
     margin-top:10px;
-    margin-bottom:40px;
+    margin-bottom:35px;
     font-size:18px;
 }
 
-/* Cards */
+/* Dashboard Cards */
 
 .cards{
     display:grid;
@@ -185,5 +193,47 @@ button:hover{
 
 .card h2{
     color:white;
-    font-size:42px;
+    font-size:40px;
+}
+
+/* ================= CREATE TICKET ================= */
+
+.ticket-form-container{
+    margin-top:20px;
+}
+
+.ticket-form{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border-radius:24px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,0.1);
+    max-width:900px;
+}
+
+.ticket-form input,
+.ticket-form select,
+.ticket-form textarea{
+    width:100%;
+    margin-bottom:20px;
+    padding:16px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:rgba(255,255,255,0.08);
+    color:white;
+    border:1px solid rgba(255,255,255,0.1);
+    font-size:15px;
+}
+
+.ticket-form textarea{
+    resize:none;
+}
+
+.ticket-form select option{
+    background:#111827;
+}
+
+.ticket-form button{
+    min-width:220px;
 }
