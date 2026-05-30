@@ -66,7 +66,7 @@ Users can submit IT support requests including:
 
 ### 🔐 Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](Public/login.png)
 
 Secure login page with authentication system.
 
@@ -74,7 +74,7 @@ Secure login page with authentication system.
 
 ### 📊 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Public/dashboard.png)
 
 Modern dashboard displaying ticket system overview.
 
@@ -82,7 +82,7 @@ Modern dashboard displaying ticket system overview.
 
 ### 🎫 Create Ticket
 
-![Create Ticket](screenshots/create ticket.png)
+![Create Ticket](Public/createticket.png)
 
 Submit IT support requests with categories and priorities.
 
@@ -90,7 +90,7 @@ Submit IT support requests with categories and priorities.
 
 ### 📋 View Tickets
 
-![View Tickets](screenshots/view.png)
+![View Tickets](Public/view.png)
 
 Manage and view all submitted support tickets.
 
