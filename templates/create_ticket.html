@@ -30,49 +30,88 @@
     <div class="main-content">
 
         <h1>Create Ticket 🎫</h1>
+
         <p class="welcome-text">
             Submit a new IT support request
         </p>
 
         <div class="ticket-form-container">
 
-            <form class="ticket-form">
+            <form class="ticket-form" method="POST">
 
                 <input
                     type="text"
+                    name="employee_name"
                     placeholder="Employee Name"
                     required
                 >
 
                 <input
                     type="text"
+                    name="issue_title"
                     placeholder="Issue Title"
                     required
                 >
 
-                <select required>
+                <select
+                    name="category"
+                    required
+                >
                     <option value="">
                         Select Category
                     </option>
-                    <option>Password Reset</option>
-                    <option>Email Issue</option>
-                    <option>Printer Problem</option>
-                    <option>Wi-Fi Issue</option>
-                    <option>Software Installation</option>
-                    <option>Hardware Problem</option>
+
+                    <option>
+                        Password Reset
+                    </option>
+
+                    <option>
+                        Email Issue
+                    </option>
+
+                    <option>
+                        Printer Problem
+                    </option>
+
+                    <option>
+                        Wi-Fi Issue
+                    </option>
+
+                    <option>
+                        Software Installation
+                    </option>
+
+                    <option>
+                        Hardware Problem
+                    </option>
+
                 </select>
 
-                <select required>
+                <select
+                    name="priority"
+                    required
+                >
                     <option value="">
                         Priority
                     </option>
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
+
+                    <option>
+                        Low
+                    </option>
+
+                    <option>
+                        Medium
+                    </option>
+
+                    <option>
+                        High
+                    </option>
+
                 </select>
 
                 <textarea
                     rows="6"
+                    name="description"
                     placeholder="Describe the issue..."
                     required
                 ></textarea>

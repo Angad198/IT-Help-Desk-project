@@ -237,3 +237,35 @@ button:hover{
 .ticket-form button{
     min-width:220px;
 }
+/* ================= TICKETS TABLE ================= */
+
+.table-container{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border-radius:24px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.1);
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    text-align:left;
+    color:#22c55e;
+    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+table td{
+    padding:18px;
+    color:white;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+table tr:hover{
+    background:rgba(255,255,255,0.04);
+}
