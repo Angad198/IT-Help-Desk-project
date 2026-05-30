@@ -82,7 +82,7 @@ Modern dashboard displaying ticket system overview.
 
 ### 🎫 Create Ticket
 
-![Create Ticket](Public/createticket.png)
+![Create Ticket](Public/Create%20Ticket.png)
 
 Submit IT support requests with categories and priorities.
 
